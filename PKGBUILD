@@ -18,6 +18,7 @@ makedepends=(
     'cargo'
     'clang'       # required by bindgen (dav1d-sys)
 )
+options=('!lto')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
 sha256sums=('SKIP')  # Replace with actual checksum once a tagged release exists
 
